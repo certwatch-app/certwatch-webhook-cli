@@ -16,11 +16,13 @@ builds:
       - arm64
 
 archives:
-  - format: tar.gz
+  - formats:
+      - tar.gz
     name_template: '{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}'
     format_overrides:
       - goos: windows
-        format: zip
+        formats:
+          - zip
 
 checksum:
   name_template: 'checksums.txt'
@@ -33,12 +35,10 @@ changelog:
       - '^ci:'
       - '^chore:'
 
-brews:
+homebrew_casks:
   - repository:
       owner: certwatch-app
       name: homebrew-tap
     homepage: https://certwatch.app
     description: Deliver real CT certificate webhook payloads to your local endpoint
     license: MIT
-    install: |
-      bin.install "certwatch-webhook-cli"

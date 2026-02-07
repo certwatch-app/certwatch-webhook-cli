@@ -24,14 +24,9 @@ npx certwatch-webhook-cli --secret <secret> --url http://localhost:3000/webhook
 # macOS / Linux (Homebrew)
 brew install certwatch-app/tap/certwatch-webhook-cli
 
-# Or download from GitHub releases
+# Or download from GitHub Releases:
+# https://github.com/certwatch-app/certwatch-webhook-cli/releases
 certwatch-webhook-cli -secret <secret> -url http://localhost:3000/webhook
-```
-
-### Go (from source)
-
-```bash
-go install github.com/certwatch-app/certwatch-webhook-cli/go@latest
 ```
 
 ## Usage
