@@ -2,9 +2,6 @@ version: 2
 
 project_name: certwatch-webhook-cli
 
-monorepo:
-  tag_prefix: go-
-
 builds:
   - main: .
     binary: certwatch-webhook-cli
