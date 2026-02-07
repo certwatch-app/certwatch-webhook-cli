@@ -1,0 +1,47 @@
+{
+  "name": "certwatch-webhook-cli",
+  "version": "1.0.0",
+  "description": "Deliver real CT certificate webhook payloads to your local endpoint for testing",
+  "type": "module",
+  "bin": {
+    "certwatch-webhook-cli": "./bin/certwatch-webhook-cli.js"
+  },
+  "files": [
+    "bin/",
+    "dist/",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js && tsc",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "certwatch",
+    "webhook",
+    "certificate-transparency",
+    "ct-log",
+    "ssl",
+    "tls",
+    "webhook-tester",
+    "cli"
+  ],
+  "author": "CertWatch <hello@certwatch.app>",
+  "license": "MIT",
+  "homepage": "https://github.com/certwatch-app/certwatch-webhook-cli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/certwatch-app/certwatch-webhook-cli",
+    "directory": "node"
+  },
+  "bugs": {
+    "url": "https://github.com/certwatch-app/certwatch-webhook-cli/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}

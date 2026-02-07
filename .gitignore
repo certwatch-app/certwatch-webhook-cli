@@ -1,0 +1,11 @@
+# Node
+node/node_modules/
+node/dist/
+node/package-lock.json
+
+# Go
+go/bin/
+go/certwatch-webhook-cli
+
+# OS
+.DS_Store
