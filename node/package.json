@@ -1,6 +1,6 @@
 {
   "name": "certwatch-webhook-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Deliver real CT certificate webhook payloads to your local endpoint for testing",
   "type": "module",
   "bin": {
@@ -9,6 +9,7 @@
   "files": [
     "bin/",
     "dist/",
+    "README.md",
     "LICENSE"
   ],
   "scripts": {
