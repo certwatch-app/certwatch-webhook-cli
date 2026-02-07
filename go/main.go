@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/certwatch-app/certwatch-webhook-cli/internal"
+	"github.com/certwatch-app/certwatch-webhook-cli/go/internal"
 )
 
 // version is set at build time via ldflags.
