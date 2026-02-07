@@ -2,11 +2,8 @@ version: 2
 
 project_name: certwatch-webhook-cli
 
-git:
-  tag_sort: -version:refname
-  prerelease_suffix: "-"
-  ignore_tags:
-    - node-v*
+monorepo:
+  tag_prefix: go-
 
 builds:
   - main: .
